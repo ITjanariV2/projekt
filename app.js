@@ -61,7 +61,7 @@ function emailVerify(userEmail) {
         subject: 'Verify your email address',
         html: `
         <p>Verification for LINK account. Link expires in 20 minutes.<p>
-        <p>Please verify you account by clicking on this <a href='http://localhost:3000/verify/${token}'>link</a></p><br>
+        <p>Please verify you account by clicking on this <a href='https://pollux-tsjp.onrender.com/verify/${token}'>link</a></p><br>
 
         <p>Thank you!</p>
         `
@@ -146,6 +146,10 @@ app.get('/verify/:token', (req, res) => {
 
         }
     })
+})
+
+app.get('/', (req, res) => {
+    res.render('frontPage.ejs')
 })
 
 app.get('/login', checkNotAuthenticated, (req, res) => {
