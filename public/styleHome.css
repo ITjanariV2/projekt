@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    overflow-x: hidden;
+    font-family: 'Open Sans';
+}
+
+#message {
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    color: white;
+    font-size: 5em;
+    padding: 20px;
+    transition: all 2.5s ease-out;
+}
+#message.move {
+    display: inline;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+form > button {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}

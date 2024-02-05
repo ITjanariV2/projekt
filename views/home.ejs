@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="welcome.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/styleHome.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="message">Hello, <%= name %>!</div>
+    <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Log Out</button>
+    </form>
+</body>
+</html>

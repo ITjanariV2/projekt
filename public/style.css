@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(/earth.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: 'Open Sans';
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+form {
+    padding: 30px;
+    background-color: rgba(62, 62, 62, 0.95);
+    border-radius: 8px;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+label {
+    color: white;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px;
+}
+
+input {
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+    border: 2px solid gray;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+}
+
+input:focus {
+    border: 2px solid rgba(255, 242, 0, 0.8);
+}
+
+.align > div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#btn {
+    border: none;
+    width: 165px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(232, 221, 20, 0.8);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 30px;
+    transition: 150ms ease-in;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.alAc {
+    color: white;
+    padding-top: 30px;
+}
+
+.alAc > a {
+    color: rgba(232, 221, 20, 0.8);;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#messageInfo {
+    color: red;
+    font-weight: bold;
+    padding-top: 5px;
+}
